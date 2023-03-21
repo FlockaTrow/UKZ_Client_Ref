@@ -1,0 +1,178 @@
+.Contacts {
+    background: #3F5F6F;
+    color: #D6EAEC;
+    padding: 130px 0 115px 0;
+    &__container {
+        max-width: 1700px;
+        margin: 0 auto;
+        padding: 0 25px;
+        h1 {
+            color: #D6EAEC;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+            font-size: 64px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 75px;
+        }
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            column-gap: 50px;
+            .form {
+                background: #FFFFFF;
+                padding: 60px 150px;
+                h2 {
+                    font-size: 36px;
+                    font-weight: 900;
+                    color: #24322F;
+                    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+                    text-align: center;
+                    margin-bottom: 35px;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        height: 50px;
+                        padding: 15px 5px;
+                        background: #D6EAEC;
+                        margin-bottom: 15px;
+                    }
+                    textarea {
+                        resize: none;
+                        height: 150px;
+                        background: #D6EAEC;
+                        padding: 15px 5px;
+                        margin-bottom: 15px;
+                    }
+                    div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    button {
+                        background: #24322F;
+                        font-size: 20px;
+                        font-weight: 900;
+                        color: #D6EAEC;
+                        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+                        width: 250px;
+                        height: 50px;
+                    }
+                }
+            }
+            .map {
+                img {
+                    object-fit: cover;
+                }
+                p {
+                    margin-top: 60px;
+                    color: #D6EAEC;
+                    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+                    font-size: 36px;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1600px) {
+    .form {
+        padding: 40px 50px !important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .Contacts {
+        &__container {
+            .form { 
+                padding: 20px 30px !important;
+                h2 {
+                    font-size: 25px !important;
+                }
+            }
+        }
+    }
+    .info {
+        // grid-template-columns: 1fr !important;
+        // grid-template-rows: 1fr 1fr;
+        // align-items: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    
+    .info {
+        grid-template-columns: 800px !important;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
+    }
+}
+
+@media (max-width: 855px) {
+
+    .Contacts {
+        padding: 50px 0 40px 0;
+        &__container {
+           h1 {
+            margin-bottom: 20px !important;
+           }
+        }
+    }
+
+    
+    .info {
+        grid-template-columns: 600px !important;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px !important;
+        .map {
+            img {
+                width: 600px;
+            }
+            p { 
+                margin-top: 20px !important; 
+                font-size: 25px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 610px) {
+
+    .Contacts {
+        padding: 50px 0 40px 0;
+        &__container {
+           h1 {
+            margin-bottom: 20px !important;
+            font-size: 40px !important;
+           }
+        }
+    }
+
+    
+    .info {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 500px 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 0 !important;
+        .map {
+            img {
+                width: 100% !important;
+                height: 400px !important;
+            }
+            p { 
+                margin-top: 20px !important; 
+                font-size: 20px !important;
+            }
+        }
+    }
+}
+

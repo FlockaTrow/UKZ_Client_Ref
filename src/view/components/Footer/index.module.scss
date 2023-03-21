@@ -1,0 +1,172 @@
+.Footer {
+    background: #24322F;
+    padding: 60px 0 60px 0px;
+    color: #D6EAEC;
+    &__container {
+        max-width: 1700px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 300px auto 220px;
+        align-items: center;
+        color: #D6EAEC;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+        .logo {
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            a {
+                cursor: pointer;
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+        }
+        .info {
+            text-align: center;
+            p {
+                line-height: 21px;
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1520px) {
+    .Footer {
+        background: #24322F;
+        padding: 60px 0 60px 0px;
+        color: #D6EAEC;
+        &__container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 150px auto 220px;
+            align-items: center;
+            color: #D6EAEC;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+            .logo {
+                text-align: center;
+                img {
+                    width: 150px;
+                }
+            }
+            .nav {
+                display: flex;
+                a {
+                    cursor: pointer;
+                    &:not(:last-child) {
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .info {
+                text-align: center;
+                p {
+                    line-height: 21px;
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                        
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width: 1300px) {
+    .Footer {
+        background: #24322F;
+        padding: 60px 0 60px 0px;
+        color: #D6EAEC;
+        &__container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 200px auto 220px;
+            align-items: center;
+            color: #D6EAEC;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+            .logo {
+                text-align: center;
+                img {
+                    width: 150px;
+                }
+            }
+            .nav {
+                display: grid;
+                margin-left: 15px;
+                a {
+                    cursor: pointer;
+                    &:not(:last-child) {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .info {
+                text-align: center;
+                p {
+                    line-height: 21px;
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                        
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width: 610px) {
+    .Footer {
+        background: #24322F;
+        padding: 60px 0 60px 0px;
+        color: #D6EAEC;
+        font-size: 20px !important;
+        &__container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-content: center;
+            color: #D6EAEC;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+            .logo {
+                text-align: center;
+                img {
+                    width: 50px;
+                }
+                margin-bottom: 15px;
+            }
+            .nav {
+                display: grid;
+                margin-left: 0px;
+                a {
+                    text-align: center;
+                    cursor: pointer;
+                    &:not(:last-child) {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+                margin-bottom: 25px;
+            }
+            .info {
+                text-align: center;
+                p {
+                    line-height: 21px;
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                        
+                    }
+                }
+            }
+        }
+    } 
+}
+

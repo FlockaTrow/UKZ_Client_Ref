@@ -1,0 +1,143 @@
+.Navigation {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    // position: relative;
+    .nav {
+        max-width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        // border-bottom: 1px solid #D6EAEC;
+        align-items: center;
+    }
+    a {
+        color: white;
+        cursor: pointer;
+        img {
+            width: 60px !important;
+            height: 60px !important;
+        }
+    }
+    .language {
+        cursor: pointer;
+        position: absolute;
+        right: 50px;
+        top: 30px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #D6EAEC;
+        text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+        svg {
+            margin-left: 15px;
+        }
+    }
+}
+.NavigationBg {
+    .bgcHeader {
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        filter: brightness(30%)
+    }
+    .nav {
+        border: none !important;
+    }
+}
+
+@media (max-width: 1500px) {
+    .Navigation {
+        .nav {
+            max-width: 1000px !important;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            padding: 25px 0;
+            border-bottom: 1px solid #D6EAEC;
+        }
+        a {
+            color: white;
+        }
+     }
+
+}
+
+@media (max-width: 1000px) {
+    .Navigation {
+        .nav {
+            max-width: 500px !important;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            padding: 25px 0;
+            border-bottom: 1px solid #D6EAEC;
+        }
+        a {
+            color: white;
+        }
+     }
+
+}
+
+
+@media (max-width: 610px) {
+    .Navigation {
+        a {
+            color: white;
+            font-size: 15px !important;
+        }
+     }
+
+}
+
+@media (max-width: 660px) {
+    .Navigation {
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.8);
+        // position: relative;
+        .nav {
+            max-width: 1500px;
+            // margin: 0 0 0 0!important;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            border-bottom: 1px solid #D6EAEC;
+            align-items: center;
+        }
+        a {
+            color: white;
+            cursor: pointer;
+        }
+        .language {
+            cursor: pointer;
+            position: absolute;
+            right: 12px;
+            top: 8px;
+            font-weight: 500;
+            font-size: 17px;
+            color: #D6EAEC;
+            text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+            svg {
+               display: none;
+            }
+        }
+    }
+    .NavigationBg {
+        .bgcHeader {
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            filter: brightness(30%)
+        }
+        .nav {
+            border: none !important;
+        }
+    }
+
+}

@@ -1,0 +1,26 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    .paginationBlock {
+        display: flex;
+        .activePage {
+            background: #799bac !important;
+        }
+        .item {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #D6EAEC;
+            background: #3F5F6F;
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+}

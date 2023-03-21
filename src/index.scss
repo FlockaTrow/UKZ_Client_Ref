@@ -1,0 +1,123 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+  
+  :focus,
+  :active {
+	outline: none;
+  }
+	
+  a:focus,
+  a:active {
+	outline: none;
+  }
+  
+  nav,
+  footer,
+  header,
+  aside {
+	display: block;
+  }
+  
+  html,
+  body {
+	// height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  }
+  
+  input,
+  button,
+  textarea {
+	font-family: inherit;
+  }
+  
+  input::-ms-clear {
+	display: none;
+  }
+  
+  button {
+	cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+  }
+  
+  a,
+  a:visited {
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: none;
+  }
+  
+  ul li {
+	list-style: none;
+  }
+  
+  img {
+	vertical-align: top;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	font-size: inherit;
+	font-weight: 400;
+  }
+
+  *{scroll-behavior: smooth;}
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+  
+  body {
+	background-color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  html,body,#root {
+	// height: 100%;
+  }
+
+  body {
+	margin: 0;
+  }
+  
+  code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	  monospace;
+  }
+  
+  #root {
+  
+  }
+  
+  $base-color-font: #FFFFFF;
+  $second-color-font: #3EA5AD;
+  $bg-color: #3F5F6F;
+  $bg-color-second: #24322F;
